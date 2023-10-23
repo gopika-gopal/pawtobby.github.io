@@ -1,0 +1,1085 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+   
+    /* Only works if there is nothing absolutely 
+    positioned in relation to body */
+    overflow-x: hidden;
+
+}
+
+.container{
+    /* 114px */
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/* ******************************* */
+/* HEADER */
+/* ******************************* */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:transparent;
+    
+    /* Beacause we want header to be sticky later */
+    height: 4.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.header-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0c5a2;
+
+    /* Beacause we want header to be sticky later */
+    height: 2rem;
+    position: relative;
+}
+
+.h-right{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.h-right a{
+    vertical-align: middle;
+    margin-right: 18px;
+    margin-left: 5px;
+    transition: all .50s ease;
+}
+
+.h-right a:hover{
+    transform: translate(-2px);
+}
+
+.logo {
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+}
+
+span {
+    color: #8f4606;
+}
+
+.h-icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #844107;
+}
+
+/* ******************************* */
+/* NAVIGATION */
+/* ******************************* */
+
+.main-nav-list{
+    font-size: 18px;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.main-nav-list-1{
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    margin-left: 80px;
+}
+
+/* ******************************* */
+/* HOME SECTION */
+/* ******************************* */
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(to left top,rgba(172, 160, 108, 0.3),rgba(236, 205, 113, 0.3)),url(Images/Hero-img\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-text h1{
+    font-size:5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 50px;
+}
+
+.home-text p{
+    font-size:2rem;
+    font-weight:500;
+    line-height: 1.8rem;
+    margin-bottom: 35px;
+    color:#ffffffab;
+    margin-left: 50px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 13px 40px;
+    background:#844107;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 6rem;
+}
+.btnReadMore{
+    display: inline-block;
+    padding: 13px 40px;
+    background:#844107;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    /* margin-left: 50px; */
+    margin-right: 6rem;
+    text-transform: uppercase;
+}
+.btnViewMore{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 13px 40px;
+    background:#844107;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    text-transform: uppercase;
+}
+.icn{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.btnViewMore:hover{
+    transform: translateX(2px);
+    border: 2px solid #eb984e;
+    background: #eb984e;
+    color: #fff;
+}
+
+.btnReadMore:hover{
+    transform: translateX(2px);
+    border: 2px solid #eb984e;
+    background: #eb984e;
+    color: #fff;
+}
+
+.btn:hover{
+    transform: translateX(2px);
+    border: 2px solid #eb984e;
+    background: #eb984e;
+    color: #fff;
+}
+
+/* ******************************* */
+/* FEATURE SECTION */
+/* ******************************* */
+
+.text{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    margin: 1rem;
+    padding-top: 3rem;
+    color: #6f6f6f;
+    letter-spacing: 10px;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 9rem;
+    padding: 3rem;
+}
+
+.feature-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-text h2{
+    font-size: 2.2rem;    
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.feature-text p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 30px;
+    color:rgb(44, 42, 42);
+    margin-bottom: 35px;
+}
+
+/* ******************************* */
+/* SERVICE SECTION */
+/* ******************************* */
+
+.service{
+    padding: 75px;
+}
+
+.txt{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem;
+    color: #333;
+}
+
+.service-content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.row-img{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.row-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.7s;
+}
+
+.row{
+    border: 1px solid #e5d5d5;
+    box-shadow: 1 2.4rem 4.8rem rgba(0,0,0,0.1);
+    border-radius: 2%;
+    background-image: linear-gradient(to right bottom,#edeae7,#f6bc89);
+}
+
+.row:hover{
+    transform: translateY(5px);
+    transition: transform 0.6s;
+}
+
+.row h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    padding-bottom: 2rem;
+}
+
+.row p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #333;
+}
+
+/* ******************************* */
+/* REVIEW SECTION */
+/* ******************************* */
+
+.review-content{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    row-gap: 5rem;
+    background-color: #fdf2e9;
+}
+
+.Text{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem;
+    color: #333;
+}
+
+.review{
+    padding: 75px;
+}
+
+.review-text h6{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+   }
+
+.review-text p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding-bottom: 2rem;
+    color: #333;
+}
+
+.review-text img{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+}
+
+
+.review-content{
+    border: 1px solid #a19898;
+    border-radius: 1%;
+    padding: 15px;
+}
+
+.review-content button{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.A-icon{
+    width: 5rem;
+    height: 5rem;
+    color: #cf711f;
+}
+
+
+/* ******************************* */
+/* CONTACT SECTION */
+/* ******************************* */
+
+.contact-content{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.contact-text h6{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.6rem;
+    padding-top: 3rem;
+}
+
+.contact-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.Txt{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 3rem;
+}
+
+/* ******************************* */
+/* CTA SECTION */
+/* ******************************* */
+
+.section-cta{
+    border-bottom: 1px solid #e67e22;
+    border-top: 1px solid #e67e22;
+    background-color: #ffac62;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.75);
+    border-radius: 11px;
+    margin-top: 5rem;
+    background-image: linear-gradient(to right bottom,#edeae7,#e67e22);
+    overflow: hidden;
+    margin: 3rem;
+}
+
+.cta-text-box{
+    padding: 3rem;
+    color: #45260a;
+}
+
+.cta .heading-secondary{
+    color: #45260a;
+    margin-bottom: 3.2rem;
+   
+}
+
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-img-box{
+    background-image: linear-gradient(to right bottom,rgb(235, 151, 78, 0.3),rgb(230, 125, 34, 0.3)),
+     url('Images/img-11.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500 ;
+    margin-bottom: 1.2rem;
+}
+
+
+.cta-form input,
+.cta-form select{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.button{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    background-color: #844107;
+}
+
+.button:hover{
+    transform: translateX(2px);
+    border: 2px solid #eb984e;
+    background: #eb984e;
+    color: #fff;
+}
+
+.cta-form input::placeholder{
+    color: #aaa;
+}
+
+
+.cta *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgb(253, 242, 233, 0.5);
+}
+
+.icon{
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #eb984e;
+}
+
+/* ******************************* */
+/* FOLLOW SECTION */
+/* ******************************* */
+
+.flw-us h3{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    text-align: center;
+    padding-top: 3rem;
+    background: #ffac62;
+    color: #333;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #8b592c;
+    gap: 5rem;
+}
+
+.icons{
+    width: 1.8rem;
+    height: 1.8rem;
+     cursor: pointer;
+}
+
+
+
+
+/* rem and em do NOT depend on html font-size in media queries !
+Instead, 1rem = 1em = 16px */
+
+/* ******************************* */
+/* BELOW 1344px (Smaller desktops) */
+/* ******************************* */
+
+@media (max-width:84em){
+    .main-nav-list{
+        font-size: 16px;
+    }
+
+    .contact-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+/* ******************************* */
+/* BELOW 1200px (Landscape Tablets) */
+/* ******************************* */
+
+@media (max-width:75em){
+    .main-nav-list{
+        font-size: 13px;
+        gap: 2.8rem;
+    }
+
+    .h-right{
+        font-size: 14px;
+    }
+
+    .h-icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .logo{
+        font-size: 30px;
+    }
+
+    .main-nav-list-1{
+        font-size: 14px;
+    }
+
+    .home-text h1{
+        font-size: 4.6rem;
+    }
+
+    .home-text p{
+        font-size: 1.6rem;
+    }
+
+    .contact-text h6{
+        font-size: 1.2rem;
+    }
+
+    .contact-text p {
+        line-height: 2.2rem;
+    }
+
+    .icons{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+/* ******************************* */
+/* BELOW 944px (Tablets) */
+/* ******************************* */
+
+@media (max-width:59em){
+    .logo{
+        font-size: 24px;
+    }
+
+    .main-nav-list{
+        font-size: 12px;
+        gap: 1.8rem;
+    }
+
+    .header {
+        padding: 0 0.8rem;
+    }
+
+    .h-right {
+        font-size: 12px;
+    }
+
+    .main-nav-list-1 {
+        font-size: 12px;
+        gap: 1.8rem;
+        margin-left: 40px;
+    }
+
+    .h-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .home-text h1 {
+        font-size: 4rem;
+    }
+
+    .home-text p {
+        font-size: 1.4rem;
+    }
+
+    .text{
+        font-size: 2.2rem;
+        letter-spacing: 8px;
+    }
+
+    .btn{
+        font-size: 14px;
+        padding: 12px 13px;
+    }
+
+    .feature-text h2 {
+        font-size: 2rem;
+    }
+
+    .feature-text p {
+        font-size: 1.1rem;
+    }
+
+    .btnReadMore{
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+
+    .txt{
+        font-size: 2.4rem;
+    }
+
+    .row-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .row h4 {
+        font-size: 20px;
+    }    
+    
+    .row p{
+        font-size: 1rem;
+    }
+
+    .Text{
+        font-size: 2.4rem;
+    }
+
+    .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .review-text h6{
+        font-size: 14px;
+    }
+
+    .review-text p{
+        font-size: 1.1rem;
+    }
+
+    .review-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 3rem;
+        gap: 1rem;
+    }
+
+    .review-text img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .btnViewMore{
+        font-size: 14px;
+        margin-left: 2.2rem;
+        margin-right: 2.2rem;
+    }
+
+    .Txt{
+        font-size: 2.4rem;
+    }
+
+    .contact-text h6 {
+        font-size: 1rem;
+    }
+
+    .contact-text p {
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        padding: 3rem;
+    }
+
+    .cta-form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cta-form label {
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    .cta-form input{
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .icons {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .feature{
+        gap: 3rem;
+    }
+}
+
+
+
+/* ******************************* */
+/* BELOW 704px (Smaller Tablets) */
+/* ******************************* */
+
+@media (max-width:44em){
+    .main-nav-list-1 {
+        font-size: 10px;
+        gap: 1rem;
+        margin-left: 12px;
+    }
+
+    .h-right {
+        font-size: 10px;
+    }
+
+    .h-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .main-nav-list {
+        font-size: 10px;
+        gap: 1.2rem;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .home-text p {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: 2rem;
+        letter-spacing: normal;
+    }
+
+    .feature-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-text p {
+        font-size: 1rem;
+    }
+
+    .txt {
+        font-size: 2rem;
+    }
+
+    .row h4 {
+        font-size: 18px;
+    }
+
+    .row p {
+        font-size: 0.8rem;
+    }
+
+    .row-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .Text {
+        font-size: 2rem;
+    }
+
+    .review-text p {
+        font-size: 0.8rem;
+    }
+
+    .review-text img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .review-text h6 {
+        font-size: 12px;
+    }
+
+    .review-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        gap: 0.6rem;
+    }
+
+    .btnViewMore {
+        font-size: 12px;
+        margin-left: 5.6rem;
+        margin-right: 5.6rem;
+    }
+
+    .Txt {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 0.2rem;
+        padding: 0rem;
+    }
+
+    .cta {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cta-form label {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .cta-form input {
+        font-size: 0.8rem;
+    }
+
+    .cta-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icons {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .feature{
+        gap: 1rem;
+    }
+
+    .service-content{
+        gap: 2rem;
+    }
+
+}
+
+
+/* ******************************* */
+/* BELOW 544px (Phones) */
+/* ******************************* */
+
+@media (max-width:34em){
+    .logo {
+        font-size: 18px;
+    }
+
+    .main-nav-list {
+        font-size: 8px;
+        gap: 0.8rem;
+    }
+
+    .main-nav-list-1 {
+        font-size: 8px;
+        gap: 0.6rem;
+        margin-left: 6px;
+    }
+
+    .h-right {
+        font-size: 8px;
+    }
+
+    .h-icon {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .home-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-text p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .text {
+        font-size: 1.8rem;
+    }
+
+    .feature {
+        display: block;
+    }
+
+    .feature-text h2 {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin-bottom: 6px;
+    }
+
+    .feature-text p {
+        font-size: 0.8rem;
+    }
+
+    .btnReadMore {
+        font-size: 10px;
+    }
+
+    .txt{
+        font-size: 2rem;
+    }
+
+    .service-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .row h4 {
+        font-size: 16px;     
+        line-height: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .row-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .review-text p{
+        padding-bottom: 1rem;
+    }
+
+    .btnViewMore{
+        font-size: 10px;
+    }
+
+    .service {
+        padding: 30px;
+    }
+
+    .review {
+        padding: 30px;
+    }
+
+    .btnViewMore {
+        padding: 0 1px;
+    }
+
+    
+    .Txt {
+        font-size: 1.8rem;
+    }
+
+    .contact-text h6 {
+        font-size: 0.9rem;
+    }
+
+    .cta-form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    .icons {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+       
+
+
+
